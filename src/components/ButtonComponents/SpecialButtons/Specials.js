@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { specials } from "../../../data";
 //import any components needed
 
@@ -6,6 +6,7 @@ import { specials } from "../../../data";
 
 const Specials = () => {
   // STEP 2 - add the imported data to state
+  const [specials, setSpecialsState] = useState(specials);
   console.log(specials);
   return (
     <div>
