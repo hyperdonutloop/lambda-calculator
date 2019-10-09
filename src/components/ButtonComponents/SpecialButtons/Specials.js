@@ -6,7 +6,7 @@ import SpecialButton from "./SpecialButton";
 
 const Specials = () => {
   // STEP 2 - add the imported data to state
-  const [special, setSpecialState] = useState(specials);
+  const [special] = useState(specials);
   console.log(specials);
   return (
     <div>
@@ -21,3 +21,5 @@ const Specials = () => {
     </div>
   );
 };
+
+export default Specials;

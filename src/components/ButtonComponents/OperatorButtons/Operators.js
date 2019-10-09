@@ -6,11 +6,11 @@ import OperatorButton from "./OperatorButton";
 
 const Operators = () => {
   // STEP 2 - add the imported data to state
-  const [operator, setOperatorState] = useState(operators);
+  const [operator] = useState(operators);
   return (
     <div>
       {operator.map((button, index) => {
-         return <OperatorButton key={index} button={button} />
+         return <OperatorButton key={index} button={button.char} /> //need to get the char, not just the object.
       })
        }
     </div>
